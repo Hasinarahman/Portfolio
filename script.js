@@ -96,6 +96,53 @@ skillContent.innerHTML = `
 `;
 
 /*adding project */
+const projectContainer = document.getElementById('project-container');
+const projectPopup = document.getElementById('project-popup');
+const popupContent = document.getElementById('popup-content');
+const closePopup = document.getElementById('close-popup');
+
+const project = [
+  {
+    title: "build-a-palindrome-checker",
+    shortDescription: "",
+    Image: "image/projects/palindrome.png",
+    language: ["HTML", "CSS", "Javascript"],
+    liveLink: "https://hasinarahman.github.io/Palindrome-checker/",
+    sourceLink: "https://github.com/Hasinarahman/Palindrome-checker"
+  },
+  {
+    title: "build-a-roman-numeral-converter",
+    shortDescription: "",
+    Image: "image/projects/converter.PNG",
+    language: ["HTML", "CSS", "Javascript"],
+    liveLink: "https://hasinarahman.github.io/Roman-Numeral/",
+    sourceLink: "https://github.com/Hasinarahman/Roman-Numeral"
+  },
+  {
+    title: "build-a-telephone-number-validator",
+    shortDescription: "",
+    Image: "image/projects/telephon.PNG",
+    language: ["HTML", "CSS", "Javascript"],
+    liveLink: "https://hasinarahman.github.io/telephone-number-validator/",
+    sourceLink: ""
+  },
+  {
+    title: "build-a-cash-register",
+    shortDescription: "",
+    Image: "image/projects/cash register.PNG",
+    language: ["HTML", "CSS", "Javascript"],
+    liveLink: "https://hasinarahman.github.io/Cash-Register/",
+    sourceLink: "https://github.com/Hasinarahman/Cash-Register"
+  },
+  {
+    title: "build-a-pokemon-search-app",
+    shortDescription: "",
+    Image: "image/projects/pokemen.PNG",
+    language: ["HTML", "CSS", "Javascript"],
+    liveLink: "https://hasinarahman.github.io/Pokemon-Search-App/",
+    sourceLink: "https://github.com/Hasinarahman/Pokemon-Search-App"
+  },
+]
 
 
 
