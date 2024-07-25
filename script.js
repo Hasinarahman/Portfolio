@@ -55,6 +55,8 @@ aboutContent.innerHTML = `
 ).join('')}
 `;
 
+
+/* adding skill using java*/
 const skillContent = document.getElementById('skill-contant');
 
 skillContent.innerHTML = `
@@ -92,6 +94,9 @@ skillContent.innerHTML = `
   <div id="lang">Multilingualism</div>
   <div id="lang">Public Speaking</div>
 `;
+
+/*adding project */
+
 
 
 

@@ -111,6 +111,7 @@ li a {
   margin-left: 50px;
 }
 
+/* the skill part background image and addign skill using java*/  
 #skill {
   width: 100%;
   height: 260px;
@@ -167,7 +168,8 @@ li a {
   box-shadow: 0 0 15px rgb(2, 2, 2);
 }
 
-#Projects {
+/* adding image background, text and project using java*/
+#project {
   background-image: url(image/projects/935205f3d34a15e07a7febf687278203.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -177,6 +179,20 @@ li a {
   height: 209px;
   margin-top: 50px;
 }
+
+#third-text {
+  color: rgb(255, 255, 255);
+  padding-left: 50px;
+  width: 199px;
+  height: 57px;
+  font-size: 32px;
+  position: absolute;
+  font-weight: 800;
+  margin-top: 150px;
+  margin-left: 70px;
+}
+
+
 
 
 
