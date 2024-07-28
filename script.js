@@ -25,12 +25,6 @@ closeBtn.addEventListener('click', () => {
 
 
 
-
-
-
-
-
-
 const aboutContent = document.getElementById('about-content');
 
 const skills = {
@@ -98,13 +92,15 @@ skillContent.innerHTML = `
 /*adding project */
 const projectContainer = document.getElementById('project-container');
 const projectPopup = document.getElementById('project-popup');
-const popupContent = document.getElementById('popup-content');
 const closePopup = document.getElementById('close-popup');
 
-const project = [
+const popupContent = document.getElementById('popup-content');
+
+const projects = [
   {
     title: "build-a-palindrome-checker",
-    shortDescription: "",
+    shortDescription: " this is new poject",
+    longDescription: "this is new poject",
     Image: "image/projects/palindrome.png",
     language: ["HTML", "CSS", "Javascript"],
     liveLink: "https://hasinarahman.github.io/Palindrome-checker/",
@@ -112,7 +108,8 @@ const project = [
   },
   {
     title: "build-a-roman-numeral-converter",
-    shortDescription: "",
+    shortDescription: "this is new poject",
+    longDescription: "this is new poject",
     Image: "image/projects/converter.PNG",
     language: ["HTML", "CSS", "Javascript"],
     liveLink: "https://hasinarahman.github.io/Roman-Numeral/",
@@ -120,7 +117,8 @@ const project = [
   },
   {
     title: "build-a-telephone-number-validator",
-    shortDescription: "",
+    shortDescription: "this is new poject",
+    longDescription: "this is new poject",
     Image: "image/projects/telephon.PNG",
     language: ["HTML", "CSS", "Javascript"],
     liveLink: "https://hasinarahman.github.io/telephone-number-validator/",
@@ -128,7 +126,8 @@ const project = [
   },
   {
     title: "build-a-cash-register",
-    shortDescription: "",
+    shortDescription: "this is new poject",
+    longDescription: "",
     Image: "image/projects/cash register.PNG",
     language: ["HTML", "CSS", "Javascript"],
     liveLink: "https://hasinarahman.github.io/Cash-Register/",
@@ -137,6 +136,7 @@ const project = [
   {
     title: "build-a-pokemon-search-app",
     shortDescription: "",
+    longDescription: "",
     Image: "image/projects/pokemen.PNG",
     language: ["HTML", "CSS", "Javascript"],
     liveLink: "https://hasinarahman.github.io/Pokemon-Search-App/",
@@ -144,8 +144,32 @@ const project = [
   },
 ]
 
+projectContainer.innerHTML = projects.map(
+  (project, index) =>`
+  <div class="project-card">
+    <h3>${project.title}</h3>
+    <p>${project.shortDescription}</p>
+    <button onclick='showPopup(${index})'>Details</button>
+  </div>
+  `,
+).join("");
 
+function showPopup(index) {
+  const project = projects[index];
+  popupContent.innerHTML = `
+  <h3>${project.title}</h3>
+  <p>${project.longDescription}</p>
+  <p>Languages: ${project.language.join(", ")}</p>
+  <a href="${project.liveLink}" target="_blank">Live Demo</a>
+  <a href="${project.sourceLink}" target="_blank">Sourse Link</a>
+  
+  `;
+  projectPopup.classList.remove('hidden');
+};
 
+closePopup.addEventListener('click', () => {
+  projectPopup.classList.add("hidden");
+})
 
 
 

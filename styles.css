@@ -169,7 +169,7 @@ li a {
 }
 
 /* adding image background, text and project using java*/
-#project {
+#projects {
   background-image: url(image/projects/935205f3d34a15e07a7febf687278203.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -194,14 +194,31 @@ li a {
 
 #project-popup {
   background-color: white;
-  position: fixed;
   margin-left: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 0 0 15px rgb(2, 2, 2);
   padding: 20px;
+  border-radius: 20px;
+  width: 350px;
+  height: 350px;
+  border: 5px;
+  border-color: rgba(104, 92, 246, 1);
 }
 
-
+#close-popup {
+ background-color: white;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: -160px;
+  left: 70px;
+  color: rgba(104, 92, 246, 1);
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: 100;
+  margin-top: 80px;
+  margin-left: 260px;
+}
 
 
 
