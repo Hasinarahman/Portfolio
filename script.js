@@ -22,27 +22,24 @@ closeBtn.addEventListener('click', () => {
     closeBtn.classList.toggle('hiddden');
 });
 
-
-
-
 const aboutContent = document.getElementById('about-content');
 
 const skills = {
   certification: [
-    {name: 'Responsive Web Design', link: 'https://www.freecodecamp.org/certification/fcc091f1c4c-9c01-4976-a725-b5cdec383f6e/responsive-web-design', Image: './'},
-    {name: 'JavaScript Algorithms and Data Structures', link: 'https://www.freecodecamp.org/certification/fcc091f1c4c-9c01-4976-a725-b5cdec383f6e/javascript-algorithms-and-data-structures-v8', Image: ''}
+    {name: 'Responsive Web Design', link: 'https://www.freecodecamp.org/certification/fcc091f1c4c-9c01-4976-a725-b5cdec383f6e/responsive-web-design', Image: './image/projects/freecodecomp certificate.PNG'},
+    {name: 'JavaScript Algorithms and Data Structures', link: 'https://www.freecodecamp.org/certification/fcc091f1c4c-9c01-4976-a725-b5cdec383f6e/javascript-algorithms-and-data-structures-v8', Image: './image/projects/java certificate.PNG'}
   ]
 };
 
 aboutContent.innerHTML = `
   <p id="intorduction">I'm Hasina Rahmani, a graduate of the Faculty of Computer Science with a passion for software development and graphic design. I've gained experience in both fields, working as a Social Media Poster Graphic Designer and developing my skills in JavaScript, CSS& HTML. You can find some of my best work in my portfolio.</p>  
-  <p>Certification:</p>
+  <p id="certificate">Certification:</p>
   <ul>
     ${skills.certification.map((certificate) => 
       `
         <li>
           <a href='${certificate.link}'>
-            <img src='${certificate.Image}' alt='${certificate.name}'>
+            <img src='${certificate.Image}' alt='${certificate.name}' id="certificate-img">
           </a>
         </li>
 ` 
@@ -93,7 +90,6 @@ skillContent.innerHTML = `
 const projectContainer = document.getElementById('project-container');
 const projectPopup = document.getElementById('project-popup');
 const closePopup = document.getElementById('close-popup');
-
 const popupContent = document.getElementById('popup-content');
 
 const projects = [
@@ -147,9 +143,9 @@ const projects = [
 projectContainer.innerHTML = projects.map(
   (project, index) =>`
   <div class="project-card">
-    <h3>${project.title}</h3>
-    <p>${project.shortDescription}</p>
-    <button onclick='showPopup(${index})'>Details</button>
+    <h3 id="project-title">${project.title}</h3>
+    <img src="${project.Image}" id="project-img" />
+    <button onclick='showPopup(${index})' id="project-button">Details</button>
   </div>
   `,
 ).join("");
@@ -157,12 +153,12 @@ projectContainer.innerHTML = projects.map(
 function showPopup(index) {
   const project = projects[index];
   popupContent.innerHTML = `
-  <h3>${project.title}</h3>
-  <p>${project.longDescription}</p>
-  <p>Languages: ${project.language.join(", ")}</p>
-  <a href="${project.liveLink}" target="_blank">Live Demo</a>
-  <a href="${project.sourceLink}" target="_blank">Sourse Link</a>
-  
+  <h3 id="pop-title">${project.title}</h3>
+  <img src="${project.Image}" id="pop-img" />
+  <p id="pop-desc">${project.longDescription}</p>
+  <p id="pop-tech">Technologies: ${project.language.join(", ")}</p>
+  <button id="pop-demo"><a href="${project.liveLink}" target="_blank">Link</a></button>
+  <button id="pop-sourse"><a href="${project.sourceLink}" target="_blank">Source</a></button>
   `;
   projectPopup.classList.remove('hidden');
 };
