@@ -97,6 +97,14 @@ const popupContent = document.getElementById('popup-content');
 
 const projects = [
   {
+    title: "Personal Portfolio",
+    longDescription: "A personal portfolio is a collection of an individual's work, achievements, and skills, often showcased online to demonstrate their expertise and experience.",
+    Image: "image/projects/new pi.PNG",
+    language: ["HTML", "CSS"],
+    liveLink: "https://hasinarahman.github.io/personal-portfolio/",
+    sourceLink: "https://github.com/Hasinarahman/personal-portfolio"
+  },
+  {
     title: "Palindrome Checker",
     longDescription: "A Palindrome Checker app is a tool designed to determine whether a given word or phrase is a palindrome. A palindrome is a sequence of characters that reads the same forward and backward, ignoring spaces, punctuation, and capitalization. For example, madam,",
     Image: "image/projects/palindrome.png",
@@ -118,10 +126,10 @@ const projects = [
     Image: "image/projects/telephon.PNG",
     language: ["HTML", "CSS", "Javascript"],
     liveLink: "https://hasinarahman.github.io/telephone-number-validator/",
-    sourceLink: ""
+    sourceLink: "https://github.com/Hasinarahman/telephone-number-validator"
   },
   {
-    title: "Ccash Register",
+    title: "Cash Register",
     longDescription: "A cash register is a device used in retail settings to process sales transactions. It calculates the total cost of purchases, displays the amount due, and facilitates payment by handling cash, cards, or digital payments",
     Image: "image/projects/cash register.PNG",
     language: ["HTML", "CSS", "Javascript"],
