@@ -64,6 +64,11 @@ li a {
   text-decoration: none;
 }
 
+.hom {
+  margin-right: 70px;
+  display: flex;
+}
+
 #close-btn {
   background-color: unset;
   width: 20px;
@@ -418,8 +423,30 @@ flex-direction: row;
 flex-wrap: wrap;
 }
 
+@media (min-width: 700px) {
+  #Home-profile,
+  #skill,
+  #projects,
+  #contacts {
+    height: 350px;
+  }
 
-@media (min-width: 1000px) {
+  #humburger-menu {
+    margin-left: 330px;
+  }
+
+  #mobile-menu {
+    padding-top: 170px;
+  }
+
+  .hom {
+    margin-right: 120px;
+  }
+  
+}
+  
+  
+@media (min-width: 1100px) {
   nav > .hidden {
     display: flex;
     flex-direction: row;
@@ -437,9 +464,15 @@ flex-wrap: wrap;
   }
 
   #humburger-menu,
-  #close-btn {
+  #close-btn,
+  #hom-img {
     display: none;
   }
+
+  .hom {
+    margin-right: 30px;
+  }
+  
 
   #home-c {
     width: 600px;
@@ -521,7 +554,11 @@ flex-wrap: wrap;
     margin-left: 230px;
   }
 
-  #name, #email, #massage, #btn-submit, #contact-para {
+  #name,
+  #email,
+  #massage,
+  #btn-submit,
+  #contact-para {
     width: 600px;
     border-radius: 10px;
   }
@@ -529,8 +566,6 @@ flex-wrap: wrap;
   .media {
     width: 800px;
   }
-  
-
 }
 
 
