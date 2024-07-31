@@ -3,7 +3,7 @@
 }
 
 body {
-  background-image: linear-gradient(359.01deg, #2C1ECD 0.77%, #221111 58.81%);
+  background-image: linear-gradient(359.01deg, #2c1ecd 0.77%, #211 58.81%);
 }
 
 .hidden {
@@ -43,15 +43,15 @@ body {
   text-align: center;
   align-items: center;
   float: right;
-  background-color:  #6B60EFCF;
+  background-color: #6b60efcf;
   opacity: 100%;
   justify-content: center;
   padding-top: 170px;
   font-size: 24px;
-  color:  rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
   list-style-type: none;
   overflow: hidden;
-  margin: 0px;
+  margin: unset;
 }
 
 li {
@@ -73,7 +73,6 @@ li a {
   background-color: unset;
   width: 20px;
   height: 20px;
-  padding: 0px;
   position: relative;
   top: -160px;
   left: 70px;
@@ -84,12 +83,11 @@ li a {
   color: rgb(255, 255, 255);
   padding-left: 50px;
   width: 268px;
-  height: 152,49px;
+  height: 152, 49px;
   top: 74px;
   left: 20px;
   font-size: 64px;
   position: absolute;
-  font: italic;
 }
 
 #Second-text {
@@ -116,7 +114,7 @@ li a {
   text-align: left;
 }
 
-/* certificate dynamically by java*/
+/* certificate dynamically by java */
 #certificate {
   color: white;
   font-size: 32px;
@@ -133,7 +131,7 @@ li a {
   margin-bottom: 20px;
 }
 
-/* the skill part background image and addign skill using java*/  
+/* the skill part background image and addign skill using java */
 #skill {
   width: 100%;
   height: 260px;
@@ -190,7 +188,7 @@ li a {
   justify-content: center;
 }
 
-/* adding image background, text and project using java*/
+/* adding image background, text and project using java */
 #projects {
   background-image: url(image/projects/935205f3d34a15e07a7febf687278203.png);
   background-repeat: no-repeat;
@@ -252,7 +250,7 @@ li a {
   justify-content: center;
 }
 
-/* adding popup for project dynamicaly for close button, title, image, long description, technaloges, live demo and source link.*/
+/* adding popup for project dynamicaly for close button, title, image, long description, technaloges, live demo and source link. */
 #project-popup {
   background-color: white;
   margin-left: 50%;
@@ -272,7 +270,7 @@ li a {
   border-radius: 50%;
   font-size: 20px;
   font-weight: 100;
-  border-color: #2C1ECD;
+  border-color: #2c1ecd;
   cursor: pointer;
   position: absolute;
   display: flex;
@@ -280,11 +278,11 @@ li a {
 }
 
 #pop-title {
- text-align: center;
- color: rgba(104, 92, 246, 1);
- width: 800;
- font-size: 18px;
- line-height: 21px;
+  text-align: center;
+  color: rgba(104, 92, 246, 1);
+  width: 800;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 #pop-img {
@@ -344,7 +342,7 @@ li a {
   font-size: 15px;
 }
 
-/* contact details*/
+/* contact details */
 #contacts {
   width: 100%;
   height: 260px;
@@ -379,11 +377,14 @@ li a {
 }
 
 #form-h {
- color: rgb(208, 207, 248);
- font-size: 34px;
+  color: rgb(208, 207, 248);
+  font-size: 34px;
 }
 
-#name, #email, #massage, #btn-submit {
+#name,
+#email,
+#massage,
+#btn-submit {
   width: 330px;
   height: 50px;
   border-radius: 20px;
@@ -417,10 +418,11 @@ li a {
   height: 50px;
   margin-top: 10px;
 }
+
 .media {
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 
