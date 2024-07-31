@@ -32,20 +32,23 @@ const skills = {
 };
 
 aboutContent.innerHTML = `
-  <p id="intorduction">I'm Hasina Rahmani, a graduate of the Faculty of Computer Science with a passion for software development and graphic design. I've gained experience in both fields, working as a Social Media Poster Graphic Designer and developing my skills in JavaScript, CSS& HTML. You can find some of my best work in my portfolio.</p>  
-  <p id="certificate">Certification:</p>
+  <p id="intorduction">I'm Hasina Rahmani, a graduate of the Faculty of Computer Science with a passion for
+   software development and graphic design. I've gained experience in both fields, working as a Social Media Poster
+   Graphic Designer and developing my skills in JavaScript, CSS& HTML,
+   Actively i'm increasing my web developing skills to be a profissional web developer. You can find some of my best
+   work in my 
+   portfolio.</p>  
+  <p id="certificate">My Certification:</p>
   <ul>
     ${skills.certification.map((certificate) => 
-      `
-        <li>
+      ` <div class="certificates-container">
           <a href='${certificate.link}'>
-            <img src='${certificate.Image}' alt='${certificate.name}' id="certificate-img">
+            <img src='${certificate.Image}' alt='${certificate.name}' class="certificates">
           </a>
-        </li>
+      </div>
 ` 
 ).join('')}
 `;
-
 
 /* adding skill using java*/
 const skillContent = document.getElementById('skill-contant');
@@ -94,45 +97,40 @@ const popupContent = document.getElementById('popup-content');
 
 const projects = [
   {
-    title: "build-a-palindrome-checker",
-    shortDescription: " this is new poject",
-    longDescription: "this is new poject",
+    title: "Palindrome Checker",
+    longDescription: "A Palindrome Checker app is a tool designed to determine whether a given word or phrase is a palindrome. A palindrome is a sequence of characters that reads the same forward and backward, ignoring spaces, punctuation, and capitalization. For example, madam,",
     Image: "image/projects/palindrome.png",
     language: ["HTML", "CSS", "Javascript"],
     liveLink: "https://hasinarahman.github.io/Palindrome-checker/",
     sourceLink: "https://github.com/Hasinarahman/Palindrome-checker"
   },
   {
-    title: "build-a-roman-numeral-converter",
-    shortDescription: "this is new poject",
-    longDescription: "this is new poject",
+    title: "Numeral Converter",
+    longDescription: "A Roman Numeral Converter is a tool that converts numbers between Roman numerals and modern Arabic numerals. It allows users to enter either a Roman numeral (like XIV) or an Arabic numeral (like 14) and provides the corresponding value in the other format.",
     Image: "image/projects/converter.PNG",
     language: ["HTML", "CSS", "Javascript"],
     liveLink: "https://hasinarahman.github.io/Roman-Numeral/",
     sourceLink: "https://github.com/Hasinarahman/Roman-Numeral"
   },
   {
-    title: "build-a-telephone-number-validator",
-    shortDescription: "this is new poject",
-    longDescription: "this is new poject",
+    title: "Telephone Number Validator",
+    longDescription: "A Telephone Number Validator is an application that checks the validity of phone numbers according to specific rules and formats",
     Image: "image/projects/telephon.PNG",
     language: ["HTML", "CSS", "Javascript"],
     liveLink: "https://hasinarahman.github.io/telephone-number-validator/",
     sourceLink: ""
   },
   {
-    title: "build-a-cash-register",
-    shortDescription: "this is new poject",
-    longDescription: "",
+    title: "Ccash Register",
+    longDescription: "A cash register is a device used in retail settings to process sales transactions. It calculates the total cost of purchases, displays the amount due, and facilitates payment by handling cash, cards, or digital payments",
     Image: "image/projects/cash register.PNG",
     language: ["HTML", "CSS", "Javascript"],
     liveLink: "https://hasinarahman.github.io/Cash-Register/",
     sourceLink: "https://github.com/Hasinarahman/Cash-Register"
   },
   {
-    title: "build-a-pokemon-search-app",
-    shortDescription: "",
-    longDescription: "",
+    title: "Pokemon Search-app",
+    longDescription: "A Pokémon Search App is a handy tool for Pokémon enthusiasts that allows users to quickly search and find information about various Pokémon",
     Image: "image/projects/pokemen.PNG",
     language: ["HTML", "CSS", "Javascript"],
     liveLink: "https://hasinarahman.github.io/Pokemon-Search-App/",
@@ -156,7 +154,7 @@ function showPopup(index) {
   <h3 id="pop-title">${project.title}</h3>
   <img src="${project.Image}" id="pop-img" />
   <p id="pop-desc">${project.longDescription}</p>
-  <p id="pop-tech">Technologies: ${project.language.join(", ")}</p>
+  <p id="pop-tech">Languages: ${project.language.join(", ")}</p>
   <button id="pop-demo"><a href="${project.liveLink}" target="_blank">Link</a></button>
   <button id="pop-sourse"><a href="${project.sourceLink}" target="_blank">Source</a></button>
   `;
@@ -167,7 +165,28 @@ closePopup.addEventListener('click', () => {
   projectPopup.classList.add("hidden");
 })
 
+const contactForm = document.getElementById("contact-form");
+const errorMassage = document.getElementById("error-massage");
 
+contactForm.addEventListener("submit", (event) => {
+  const email = document.getElementById("email").value;
+  if(email !== email.toLowerCase()){
+    event.preventDefault();
+    errorMassage.classList.remove("hidden");
+  }else {
+    errorMassage.classList.add('hidden');
+  }
+});
+
+const formFileds = ["name", "email", "massage"]
+
+formFileds.forEach((field) => {
+    const input = documet.getElementById(field);
+    input.value = localStorage.getItem(field) || "";
+    input.addEventListener("input" , () => {
+        localStorage.setItem(field, input.value)
+    });
+});
 
 
 
