@@ -134,7 +134,7 @@ const projects = [
     Image: 'image/projects/cash register.PNG',
     language: ['HTML', 'CSS', 'Javascript'],
     liveLink: 'https://hasinarahman.github.io/Cash-Register/',
-    sourceLink: 'https://github.com/Hasinarahman/Cash-Register'.
+    sourceLink: 'https://github.com/Hasinarahman/Cash-Register',
   },
   {
     title: 'Pokemon Search-app',
