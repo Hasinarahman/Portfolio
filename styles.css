@@ -459,7 +459,7 @@ li a {
     background-image: linear-gradient(rgba(214, 209, 209, 1), rgba(74, 73, 73, 1));
     position: absolute;
     display: flex;
-    top: unset;
+    top: 1px;
     margin-top: 80px;
     margin-left: 350px;
   }
