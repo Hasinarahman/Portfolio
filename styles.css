@@ -511,6 +511,16 @@ flex-wrap: wrap;
     flex-wrap: wrap;
   }
 
+  #third-text {
+    margin-top: 210px;
+    margin-left: 180px;
+  }
+
+  #contact-h {
+    margin-top: 230px;
+    margin-left: 230px;
+  }
+
   #name, #email, #massage, #btn-submit, #contact-para {
     width: 600px;
     border-radius: 10px;
