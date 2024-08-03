@@ -40,8 +40,8 @@ aboutContent.innerHTML = `
    portfolio.</p>  
   <p id="certificate">My Certification:</p>
   <ul class="flex">
-    ${skills.certification.map((certificate) =>
-    `<div class="certificates-container">
+    ${skills.certification.map((certificate) => `
+      <div class="certificates-container">
         <a href='${certificate.link}'>
           <img src='${certificate.Image}' alt='${certificate.name}' class="certificates">
         </a>
@@ -182,7 +182,6 @@ closePopup.addEventListener('click', () => {
 });
 
 /* adding contact */
-
 const form = document.getElementById('myform');
 const name = document.getElementById('name');
 const email = document.getElementById('email');
@@ -215,7 +214,7 @@ form.addEventListener('submit', (e) => {
   } else {
     messageError.innerHTML = '';
   }
-  if (form.submit) {
+  if  (form.submit) {
     localStorage.clear();
     form.submit();
     form.reset();
