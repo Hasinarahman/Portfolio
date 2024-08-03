@@ -39,7 +39,7 @@ aboutContent.innerHTML = `
    work in my 
    portfolio.</p>  
   <p id="certificate">My Certification:</p>
-  <ul>
+  <ul class="flex">
     ${skills.certification.map((certificate) => 
     `<div class="certificates-container">
           <a href='${certificate.link}'>
@@ -47,28 +47,33 @@ aboutContent.innerHTML = `
           </a>
       </div>
 `,
-  ).join('')}
+  )
+  .join('')}
+</ul>
 `;
+
 
 /* adding skill using java */
 const skillContent = document.getElementById('skill-contant');
 
 skillContent.innerHTML = `
+ 
+ <div class="colum" id="div-lang">
   <div id="prog-lang">Programming Languages</div>
   <div id="lang">Html</div>
   <div id="lang">CSS</div>
   <div id="lang">JavaScript</div>
+  </div>
 
+  <div class="colum" id="div-pro">
   <div id="all-skills">Professional Skills</div>
   <div id="lang">Critical thinking</div>
   <div id="lang">Clean Code</div>
   <div id="lang">Team Work</div>
   <div id="lang">Code Review</div>
+  </div>
 
-  <div id="all-skills">Soft Skills </div>
-  <div id="lang">Time Management</div>
-  <div id="lang">Multitasking</div>
-  
+  <div class="colum" id="div-soft">
   <div id="all-skills">Soft Skills </div>
   <div id="lang">Time Management</div>
   <div id="lang">Multitasking</div>
@@ -77,16 +82,21 @@ skillContent.innerHTML = `
   <div id="lang">Adaptability</div>
   <div id="lang">Creativity</div>
   <div id="lang">Problem-solving</div>
+  </div>
 
+  <div class="colum" id="div-technical">
   <div id="all-skills">Technical Skills</div>
   <div id="lang">Adobe Photoshop</div>
   <div id="lang">Adobe Illustrator</div>
   <div id="lang">Microsoft Office</div>
+  </div>
 
+  <div class="colum" id="div-add">
   <div id="all-skills">Additional Skills </div>
   <div id="lang">Social Media Management</div>
   <div id="lang">Multilingualism</div>
   <div id="lang">Public Speaking</div>
+  </div>
 `;
 
 /* adding project */
@@ -96,6 +106,7 @@ const closePopup = document.getElementById('close-popup');
 const popupContent = document.getElementById('popup-content');
 
 const projects = [
+  
   {
     title: 'Personal Portfolio',
     longDescription: 'A personal portfolio is a collection of an individuals work, achievements, and skills, often showcased online to demonstrate their expertise and experience.',
@@ -173,28 +184,57 @@ closePopup.addEventListener('click', () => {
   projectPopup.classList.add('hidden');
 });
 
-const contactForm = document.getElementById('contact-form');
-const errorMassage = document.getElementById('error-massage');
+/* adding contact */
 
-contactForm.addEventListener('submit', (event) => {
-  const email = document.getElementById('email').value;
-  if (email !== email.toLowerCase()) {
-    event.preventDefault();
-    errorMassage.classList.remove('hidden');
+const form = document.getElementById('myform');
+const name = document.getElementById('name');
+const email = document.getElementById('email');
+const message = document.getElementById('massage');
+const nameError = document.getElementById('name_error');
+const emailError = document.getElementById('email_error');
+const messageError = document.getElementById('message-error');
+
+form.addEventListener('submit', (e) => {
+  const emailChecker = /^[\w-]+@[a-z0-9\d-]+\.[a-z]{2,}$/;
+  const hasUpperCase = /[A-Z]/.test(email.value);
+  if (name.value === '' || name.value === null) {
+    e.preventDefault();
+    nameError.innerHTML = 'Name is required!';
   } else {
-    errorMassage.classList.add('hidden');
+    nameError.innerHTML = '';
+  }
+  if (!email.value.match(emailChecker)) {
+    e.preventDefault();
+    emailError.innerText = 'Please enter a valid email address!';
+  } else if (hasUpperCase) {
+    e.preventDefault();
+    emailError.innerHTML = 'Email should not contain capital letters.';
+  } else {
+    emailError.innerText = '';
+  }
+  if (message.value.length <= 8) {
+    e.preventDefault();
+    messageError.innerHTML = 'Please write a message!';
+  } else {
+    messageError.innerHTML = '';
+  }
+  if (form.submit) {
+    localStorage.clear();
+    form.submit();
+    form.reset();
   }
 });
 
-const formFileds = ['name', 'email', 'massage']
+const formFields = ['name', 'email', 'massage'];
 
-formFileds.forEach((field) => {
-    const input = documet.getElementById(field);
-    input.value = localStorage.getItem(field) || "";
-    input.addEventListener("input" , () => {
-        localStorage.setItem(field, input.value)
-    });
+formFields.forEach((field) => {
+  const input = document.getElementById(field);
+  input.value = localStorage.getItem(field) || '';
+  input.addEventListener('input', () => {
+    localStorage.setItem(field, input.value);
+  });
 });
+
 
 
 
