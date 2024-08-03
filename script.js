@@ -46,8 +46,8 @@ aboutContent.innerHTML = `
           <img src='${certificate.Image}' alt='${certificate.name}' class="certificates">
         </a>
       </div>
-`,)
-.join('')}
+`)
+    .join('')}
 </ul>
 `;
 
