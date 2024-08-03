@@ -40,18 +40,16 @@ aboutContent.innerHTML = `
    portfolio.</p>  
   <p id="certificate">My Certification:</p>
   <ul class="flex">
-    ${skills.certification.map((certificate) => 
+  ${skills.certification.map((certificate) => 
     `<div class="certificates-container">
-          <a href='${certificate.link}'>
-            <img src='${certificate.Image}' alt='${certificate.name}' class="certificates">
-          </a>
+        <a href='${certificate.link}'>
+          <img src='${certificate.Image}' alt='${certificate.name}' class="certificates">
+        </a>
       </div>
 `,
-  )
-  .join('')}
+  ).join('')}
 </ul>
 `;
-
 
 /* adding skill using java */
 const skillContent = document.getElementById('skill-contant');
@@ -106,7 +104,6 @@ const closePopup = document.getElementById('close-popup');
 const popupContent = document.getElementById('popup-content');
 
 const projects = [
-  
   {
     title: 'Personal Portfolio',
     longDescription: 'A personal portfolio is a collection of an individuals work, achievements, and skills, often showcased online to demonstrate their expertise and experience.',
@@ -234,11 +231,4 @@ formFields.forEach((field) => {
     localStorage.setItem(field, input.value);
   });
 });
-
-
-
-
-
-
-
-
+showPopup();
