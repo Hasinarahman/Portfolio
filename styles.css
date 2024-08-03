@@ -507,20 +507,19 @@ p {
     margin-left: 60px;
     margin-top: 60px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 50px;
-    width: 200px;
+    font-size: 55px;
+    width: 250px;
     font-family: "Frank Ruhl Libre";
     font-weight: 800;
   }
 
   #Second-text {
     color: black;
-    width: 300px;
-    height: 100px;
     font-size: 32px;
     margin-top: -70px;
     margin-left: 60px;
     font-weight: 800;
+    margin-bottom: 40px;
   }
 
   #intorduction {
@@ -534,6 +533,7 @@ p {
 
   #certificate {
     font-size: 40px;
+    margin: 4px;
   }
 
   .certificates {

@@ -40,14 +40,14 @@ aboutContent.innerHTML = `
    portfolio.</p>  
   <p id="certificate">My Certification:</p>
   <ul class="flex">
-  ${skills.certification.map((certificate) => 
+  ${skills.certification.map((certificate) =>
     `<div class="certificates-container">
         <a href='${certificate.link}'>
           <img src='${certificate.Image}' alt='${certificate.name}' class="certificates">
         </a>
       </div>
-`,
-  ).join('')}
+`,)
+.join('')}
 </ul>
 `;
 
