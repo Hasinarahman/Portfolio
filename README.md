@@ -11,6 +11,7 @@
 
 
 ## Demo 📸
+![Capture](https://github.com/user-attachments/assets/e7fc40c0-6034-4737-955b-697b761d3d48)
 
 ## Live link
 ()
