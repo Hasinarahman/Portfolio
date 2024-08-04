@@ -13,7 +13,8 @@ body {
   display: none;
 }
 
-#Home-profile {
+#Home-profile,
+#about {
   width: 100%;
   height: 240px;
   background-image: url(image/projects/new\ im.png);
@@ -21,6 +22,10 @@ body {
   background-size: cover;
   background-position: center;
   top: -10px;
+}
+
+#about {
+  margin-top: 270px;
 }
 
 #humburger-menu {
@@ -91,7 +96,8 @@ li a:hover {
   color: white;
 }
 
-#first-text {
+#first-text,
+#first-introdaction {
   color: rgb(255, 255, 255);
   padding-left: 50px;
   width: 268px;
@@ -101,11 +107,16 @@ li a:hover {
   font-family: "Pinyon Script", cursive;
 }
 
+#first-introdaction {
+  margin-top: -200px;
+}
+
+
 #Second-text {
   padding-left: 50px;
   width: 288px;
   height: 200px;
-  margin-top: 80px;
+  margin-top: 250px;
   margin-left: 20px;
   font-size: 36px;
   color: rgba(221, 186, 255, 1);
@@ -117,11 +128,11 @@ li a:hover {
   font-size: 25px;
   width: 315px;
   height: 542px;
-  top: 294px;
+  margin-top: 100px;
   line-height: 31px;
   align-items: center;
   justify-content: center;
-  margin-left: 70px;
+  margin-left: 75px;
   text-align: left;
 }
 
@@ -137,7 +148,7 @@ li a:hover {
   height: 181px;
   border-radius: 30px;
   box-shadow: 0 0 15px rgb(129, 129, 129);
-  margin-top: 10px;
+  margin-top: 30px;
   margin-bottom: 20px;
 }
 
@@ -326,10 +337,11 @@ li a:hover {
   font-weight: 800;
   color: rgba(0, 0, 0, 1);
   text-align: center;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
-#pop-demo {
+#pop-demo,
+#pop-sourse {
   width: 80px;
   height: 30px;
   border-radius: 10px;
@@ -340,13 +352,7 @@ li a:hover {
 }
 
 #pop-sourse {
-  width: 80px;
-  height: 30px;
-  border-radius: 10px;
-  background-image: linear-gradient(rgba(148, 141, 232, 1), rgba(83, 79, 130, 1));
-  cursor: pointer;
-  border: none;
-  margin-top: 20px;
+  margin-top: 30px;
   flex-direction: column;
   margin-left: 130px;
 }
@@ -446,7 +452,7 @@ p {
   flex-wrap: wrap;
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1280px) {
   nav > .hidden {
     display: flex;
     flex-direction: row;
@@ -517,6 +523,16 @@ p {
     margin-left: 60px;
     font-weight: 800;
     margin-bottom: 40px;
+  }
+
+  #about {
+    margin-top: 50px;
+  }
+
+  #first-introdaction {
+    margin-left: 50px;
+    font-size: 80px;
+    width: 330px;
   }
 
   #intorduction {
@@ -591,8 +607,8 @@ p {
   }
 
   #project-img {
-    width: 450px;
-    height: 250px;
+    width: 500px;
+    height: 300px;
   }
 
   #project-title {
