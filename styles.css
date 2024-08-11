@@ -88,12 +88,14 @@ li a:hover {
 
 #close-btn {
   background-color: unset;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   position: relative;
-  top: -160px;
+  top: -140px;
   left: 70px;
   color: white;
+  border: none;
+  font-size: 22px;
 }
 
 #first-text,
