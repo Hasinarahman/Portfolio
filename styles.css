@@ -623,6 +623,37 @@ p {
     border-radius: 30px;
   }
 
+  /* pop up */
+
+  #project-popup {
+    width: 500px;
+    height: 400px;
+  }
+  
+  #close-popup {
+    left: 90%;
+  }
+  
+  #pop-title {
+    font-size: 27px;
+  }
+  
+  #pop-img {
+    width: 300px;
+    height: 200px;
+    margin-left: 100px;
+    margin-top: 20px;
+  }
+  
+  #pop-demo,
+  #pop-sourse {
+    margin-left: 50px;
+  }
+  
+  #pop-sourse {
+    margin-left: 240px;
+  }
+  
   #third-text {
     margin-top: 210px;
     margin-left: 180px;
