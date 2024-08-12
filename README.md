@@ -25,16 +25,16 @@
 - Figma Design
 
 ## Figma Design
-![Figma Design](https://www.figma.com/design/IULNZAus8DhpOTmHgeEpDu/Portfolio?t=AvdQd1u18VKBqbar-0)
+[Figma Design](https://www.figma.com/design/IULNZAus8DhpOTmHgeEpDu/Portfolio?node-id=0-1&t=WxHayGDMQW3yqfIt-0)
 
 ## Author 👩‍💻
 
-- Email: (hasinarahmani548@gmail.com)
-- linked in: (linkedin.com/in/hasina-rahmani-4a21a9311)
-- Github:
+- Email: [Hasina Rahmani](hasinarahmani548@gmail.com).
+- linked in: [Hasina Rahmani](https://www.linkedin.com/in/hasina-rahmani-4a21a9311/overlay/contact-info/).
+- Github: [Hasina Rahmani](https://github.com/dashboard).
 - UI/UX Designers: 
-- 1 Maryam Yousufi: facebook (https://www.facebook.com/ada.aaramsh?mibextid=LQQJ4d), linkedin (https://www.linkedin.com/in/maryam-yousufi-)
-- 2 Sara Shirzad: linkedin (https://www.linkedin.com/in/sara-shirzad-478696267?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app)
-- 3 Sadaf Ahmadi: facebool (https://www.facebook.com/profile.php?id=100062037753963&mibextid=kFxxJD)
+- 1 Maryam Yousufi: [Facebook](https://www.facebook.com/ada.aaramsh?mibextid=LQQJ4d), [linkedin](https://www.linkedin.com/in/maryam-yousufi-)
+- 2 Sara Shirzad: [linkedin](https://www.linkedin.com/in/sara-shirzad-478696267?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app)
+- 3 Sadaf Ahmadi: [Facebook](https://www.facebook.com/profile.php?id=100062037753963&mibextid=kFxxJD)
 - 4 Farkhunda Raufi:
 
