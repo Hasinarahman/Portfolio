@@ -1,13 +1,13 @@
 # personal-portfolio
 
 ## Project Description 📝
-  This is my portfolio project i created using HTML, CSS and javaScript it's a responsive webpage.
+  This is my portfolio project I created using HTML, CSS and javaScript it's a responsive webpage.
 
-- my project is about my portfolio
-- it include the introduction summary
-- about skill
-- about how project I worked and also contact info.
-- My project stand out in html and css.
+- My project is about my portfolio
+- It include the introduction summary
+- About skill
+- About how my project worked and also contact info.
+- My project stand out in HTML, CSS and JavaScript.
 
 
 ## Demo 📸
@@ -25,7 +25,7 @@
 - Figma Design
 
 ## Figma Design
-  (https://www.figma.com/design/IULNZAus8DhpOTmHgeEpDu/Portfolio?t=AvdQd1u18VKBqbar-0)
+![Figma Design](https://www.figma.com/design/IULNZAus8DhpOTmHgeEpDu/Portfolio?t=AvdQd1u18VKBqbar-0)
 
 ## Author 👩‍💻
 
@@ -38,6 +38,3 @@
 - 3 Sadaf Ahmadi: facebool (https://www.facebook.com/profile.php?id=100062037753963&mibextid=kFxxJD)
 - 4 Farkhunda Raufi:
 
-
-
-(https://www.figma.com/design/IULNZAus8DhpOTmHgeEpDu/Portfolio?t=AvdQd1u18VKBqbar-0)
