@@ -28,7 +28,7 @@
 
 ## Author 👩‍💻
 
-- Email: [Hasina Rahmani](hasinarahmani548@gmail.com).
+- Email: [Hasina Rahmani]().
 - linked in: [Hasina Rahmani](https://www.linkedin.com/in/hasina-rahmani-4a21a9311/overlay/contact-info/).
 - Github: [Hasina Rahmani](https://github.com/dashboard).
 - UI/UX Designers: 
